@@ -21,11 +21,10 @@ function is_weixin() {
     }
 }
 
-/*
 if (is_weixin() && window.location.host == "m.weiweitv.cc") {
     window.location.href = "http://t.cn/RiX35Yp";
 }
 
 if (system.win || system.mac || system.xll) {
     window.location.href = "http://t.cn/RiX35Yp";
-} else {}*/
+} else {}
