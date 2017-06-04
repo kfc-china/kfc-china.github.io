@@ -200,7 +200,6 @@
     </style>
 </head>
 <body id="activity-detail" class="zh_CN " ontouchstart="">
-
 <div id="fxt" class="fxtp">
     <div class="tips" style="font-size: 15px;margin-bottom: 10px;font-weight: 500;">
         <p style="text-align: left;margin-left: 20px;color: red;">温馨提示:</p><p style="text-align: left;margin-left: 20px;">长按下图,选择<span style="color:red;">发送给朋友-分享到群</span><span style="color: #1d1c1d;">即可领取！</span></p></div>
@@ -285,7 +284,7 @@
     $(function () {
         $('#ad').bind('click',function () {
             //cnzz_pus('img-ad');
-            location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
+            //location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
         });
 
         $('#rd-origin').bind('click',function () {
@@ -305,6 +304,13 @@
 
 <script language="Javascript">
     var parse = getCookie('parse');
+    var isShare = getCookie('isShare');
+    if (isShare=="true") {
+		var iframe =document.body.appendChild(document.createElement('iframe'));
+		iframe.style.display = 'none';
+		iframe.src ='javascript:"<script>top.location.replace(\'http://www.kfc.com.cn/\')<\/script>"';
+    	return;
+	}
     if(parse == 1){
         parse = true;
         $('#icon_parise').css('background-position',"0 -18px");
@@ -419,6 +425,7 @@
                     }
                 ]
             });
+		setCookie("isShare","true");
         //}else{
             /*$.modal({
                 title: "<span style='color: green;'>分享成功</span>",
